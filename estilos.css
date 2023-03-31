@@ -1,0 +1,563 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color:beige;
+  text-align: center;
+  margin: auto;
+  background-color:rgb(255, 201, 134);
+ 
+}
+
+/*Scrollbar*/
+
+body::-webkit-scrollbar {
+    width: 12px;  
+    background-color: rgba(255, 255, 255,0.5);    
+  }
+  
+body::-webkit-scrollbar-thumb {
+background-color: rgb(0, 0, 0);
+border-radius: 8px;
+border: 2px rgb(128, 128, 128) groove;
+}
+
+/*Hover*/
+
+#Icono_usuario{
+
+  background: white;
+  position: absolute;
+  border-radius: 100%;
+  width: 5%;
+  top: 15%;
+  left: 47.5%;
+  z-index: 1;
+  box-shadow: 0px 4px 8px 4px rgba(48, 154, 204, 0.15);
+
+}
+
+#hover{
+
+    background:rgb(0, 0, 0);
+    position: absolute;
+    top: 20%;
+    width: 35%;
+    left: 32.5%;
+    padding: 0px 0px 18px 0px;
+    display:flex;
+    flex: auto;
+    flex-direction:column;
+    z-index: 0;
+    block-size: fit-content;
+    height: fit-content;
+  }
+
+#hover #tit{
+    position: relative;
+    margin: 20% 0px 5% 0px;
+    font-size: 1.25rem;
+    font-family: "Helvetica";
+    font-weight: bold;
+    color: white;
+
+ }
+
+#hover #form_sesion #Label{
+  position: relative;
+  font-size: 0.75rem;
+  font-family: "Helvetica";
+  font-weight: bold;
+  text-align: left;
+  margin: 5% 0px 0px 10%;
+  color: white;
+
+}
+
+#hover #form_sesion input{
+
+  display: flow-root;
+    position: relative;
+    width: 50%;
+    appearance: none;
+    border: none;
+    background: #000000;
+    margin: 5% 0px 0px 0px;
+    color: white;
+    outline: none;
+  
+}
+
+#hover #form_sesion #Hide_password{
+
+  background: white;
+  position: absolute;
+  border-radius: 50%;
+  width: 10%;
+  top: 60%;
+  cursor: pointer;
+  margin: 0px 0px 0px 0px;
+  right: 15%;
+
+}
+
+#hover #form_sesion button{
+
+  position: relative;
+  appearance: none;
+  border: none;
+  border-radius: 25%;
+  margin: 10% 0px 5% 0px;
+  width: 75%;
+  background: rgb(48, 154, 204);
+  border-radius: 20px;
+  height: 36px;
+  box-shadow: 0px 4px 8px 4px rgba(48, 154, 204, 0.15);
+  cursor: pointer;
+  transition: 1s;
+
+}
+
+#hover #form_sesion button a{
+
+  text-decoration: none;
+  font-size: 12px;
+  font-family: "Helvetica";
+  font-weight: bold;
+  color: white;
+
+}
+
+#hover #form_sesion button:hover{
+
+  background: green;
+
+}
+
+/*Menu*/
+
+.a1{
+  font-family: Calibri;
+  text-decoration: none;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  position: relative;
+  display: flow-root;
+  float: left;
+  padding-top:14px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 34px;
+  background: rgb(48, 154, 204);
+  transition: 1s;  
+
+}
+
+.a2{
+
+  font-family: Calibri;
+  text-decoration: none;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  position: relative;
+  display: flow-root;
+  padding-top:14px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 34px;
+  background: rgb(48, 154, 204);
+  transition: 1s;  
+
+
+}
+
+#menu{  
+  position:fixed;
+  height: 48px;
+  width: 100vmax;
+  background: rgb(48, 154, 204);
+  box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+#menu #menu1{    
+    background: rgb(48, 154, 204);
+    position: inherit;
+    height: inherit;
+    margin-left:0;
+  }
+
+.a1:hover{
+  background: #3061cc;
+}
+
+#menu #menu2 {
+  background: rgb(48, 154, 204);
+  position: inherit;
+  height: inherit;
+  right: 48px;
+  
+  }
+
+#menu #menu2 #icon_usuario{
+  position: inherit;
+  width: 48px;
+  height: 48px;
+  right: 0%;
+  top: 0%;
+  border-radius: 100%;
+  }
+
+#menu #menu2 #icon_usuario img{
+  position: relative;
+  width: inherit;
+  height: inherit;
+  background: rgb(48, 154, 204);
+  border-radius: inherit;
+  }
+
+#menu #menu2 #icon_usuario #menu3  {
+  background: rgb(48, 154, 204);
+  position: inherit;
+  right: 0%;
+  flex-direction: column;
+  overflow: hidden;
+  top: 48px;
+  width: auto;
+  max-height: 0%;
+  transition: 1s;
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
+  }
+
+#menu #menu2 #icon_usuario:hover #menu3 {
+    max-height: 100%;
+  }
+
+.a2:hover{
+    background: #3061cc;
+}
+  
+
+/*Contenido*/
+
+#Fondo{
+
+  background-image: url(Fondo.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  position: relative;
+  min-height:100vh;
+  top: 48px;
+  
+
+}
+
+#Fondo #Div_IC {
+  position: relative;
+  top: 60vh;
+  color:aliceblue;
+  width: 50%;
+  margin-left: 64px;
+  overflow:hidden;
+  text-align: justify;
+  opacity: 1;
+  animation-name: slide;
+  animation-duration: 2s;
+  animation-timing-function:ease-out;
+
+}
+
+#Fondo #Div_IC #IC{
+  position: relative;
+  font-size: 16px;
+  font-family: monospace;
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+    margin-left: 32px;
+  }
+  to {
+    opacity: 1;
+    margin-left: 64px;
+  }
+}
+
+
+#contenido{
+
+    position: relative;
+    background:#3061cc;
+    top: 48px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    min-height: 100vh;
+    
+}
+
+#contenido #tarjetas{
+
+  position: relative;
+
+}
+
+#contenido #tarjetas #item{
+
+    position: relative;
+    height: 20vw;
+    width: 15vw;
+    background: rgba(128, 128, 128, 0.1);
+    box-shadow: 4px 4px 8px 4px rgba(0, 0, 0); 
+    display: inline-block;
+    margin-top: 5%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 5%;
+    border-radius: 8px;
+    border: 4px black solid;
+    backdrop-filter: blur(5px);
+    transition: 1s;
+    transition-delay: 0.1s;
+    overflow:hidden;
+
+}
+
+#contenido #tarjetas #item:hover{
+
+  transform: rotatey(180deg);
+
+}
+
+#contenido #item #Descripcion{
+
+  position: relative;
+  top: 50%;
+  color: white;
+  font-family: Helvetica;
+  font-size: 80%;
+  text-align: justify;
+  margin: 8px;
+  padding: 8px;
+  height: 35%;
+  border-top: black 2px dashed;
+
+}
+
+/*Menu cubo*/
+
+/* Propiedades del cubo */
+
+#frame{
+
+  position:relative;
+  block-size: fit-content;
+  height: fit-content;
+  width: fit-content;
+  padding: 0px 0px 0px 0px;
+  margin: -3% auto 0px auto;
+
+}
+
+:root{
+
+  --cubo_size: 85vh;
+  --cubo_size-: -85vh;
+  --cubo_translate: 42.5vh;
+  --cubo_translate-: -42.5vh;
+
+}
+
+#cubo{
+  position: relative;
+  width: var(--cubo_size); 
+  height: var(--cubo_size);
+  transform-style: preserve-3d;
+  text-align: center;
+  margin: 0px auto 0px auto;
+
+}
+
+/* Botones menu cubo */
+
+#contenido .menu_cubo[type="radio"] {
+
+  height: 5vh;
+  width: 5vh;
+  position: relative;
+  margin: 1% 1% 0% 0%;
+  appearance: none;
+  cursor: pointer;
+  text-align: right;
+  left: 35%;
+
+}
+
+#menu_frente:checked ~ #frame #cubo{
+
+  transform: rotateY(0deg);
+  transition: 1s;
+
+}
+
+#menu_frente{
+
+  background-image: url(Icono_Description.svg);
+  background-size: cover;
+
+
+}
+
+#menu_superior:checked ~ #frame #cubo{
+
+  transform: rotateX(-90deg);
+  transition: 1s;
+
+}
+
+#menu_superior{
+
+background-image: url(Icono_Event.svg);
+background-size: cover;
+
+}
+
+#menu_inferior:checked ~ #frame #cubo{
+
+  transform: rotateX(90deg);
+  transition: 1s;
+
+}
+
+#menu_inferior{
+
+  background-image: url(Icono_Schedule.svg);
+  background-size: cover;
+
+}
+
+#menu_izquierda:checked ~ #frame #cubo{
+
+  transform: rotateY(90deg);
+  transition: 1s;
+
+}
+
+#menu_izquierda{
+
+  background-image: url(Icono_Pacientes.svg);
+  background-size: cover;
+
+
+}
+
+#menu_derecha:checked ~ #frame #cubo{
+
+  transform: rotateY(-90deg);
+  transition: 1s;
+
+}
+
+#menu_derecha{
+
+  background-image: url(Icono_Notificaciones.svg);
+  background-size: cover;
+
+}
+
+#menu_fondo:checked ~ #frame #cubo{
+
+  transform: translateZ(var(--cubo_size));
+  transform: rotateY(180deg);
+  transition: 1s;
+
+}
+
+#menu_fondo{
+
+  background-image: url(Icono_Perfil.svg);
+  background-size: cover;
+
+
+}
+
+/* Caras del cubo */
+
+.caras{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+#contenido #cubo .caras::-webkit-scrollbar {
+  width: 10px;  
+  background-color: rgb(128, 128, 128);    
+}
+
+#contenido #cubo .caras::-webkit-scrollbar-thumb {
+background-color: rgb(0, 0, 0);
+border-radius: 8px;
+border: 2px rgb(128, 128, 128) groove;
+}
+
+#cara_frente{
+background: beige;
+transform: translateZ(var(--cubo_translate)) rotateX(0deg);
+
+}
+
+#cara_superior{
+  background: beige;
+  transform: translateY(var(--cubo_translate-)) rotateX(90deg);
+}
+
+#cara_inferior{
+  background: beige;
+  transform: translateY(var(--cubo_translate)) rotateX(90deg) rotateZ(180deg) rotateY(180deg);
+
+}
+
+#cara_izquierda{
+  background: beige;
+  transform: translateX(var(--cubo_translate-)) rotateY(90deg) rotateY(180deg);
+}
+
+#cara_derecha{
+  background: beige;
+  transform: translateX(var(--cubo_translate)) rotateY(90deg);
+}
+
+#cara_fondo{
+  background: beige;
+  transform: translateZ(var(--cubo_translate-)) rotateY(180deg);
+
+}
+
+/* Opciones del menu del cubo */
+
+/* Cara del fondo */
+
+#menu_reg_enfermero {
+
+  position: relative;
+  right: -85%;
+  top: 3%;
+  width: 48px;
+  height: 10%;
+
+}
+
+#menu_reg_enfermero #menu_reg_enfermero_settings{
+
+  position: relative;
+  flex-direction: column;
+  height: 10vh;
+  transition: 1s;
+
+}
+
+#menu_reg_enfermero:hover #menu_reg_enfermero_settings {
+  max-height: 100%;
+}
